@@ -3,7 +3,7 @@ Demo Flask app: one endpoint per algorithm so you can hammer each
 with curl/Postman and see the 429s kick in differently.
 
 Run:
-    pip install flask
+    pip install flask    
     python app.py
 
 Try (from another terminal):
