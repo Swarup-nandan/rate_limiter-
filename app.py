@@ -4,7 +4,7 @@ with curl/Postman and see the 429s kick in differently.
 
 Run:
     pip install flask    
-    python app.py
+    python app.py 
 
 Try (from another terminal):
     for i in {1..10}; do curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:5000/token-bucket; done
