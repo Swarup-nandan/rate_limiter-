@@ -4,16 +4,16 @@ rate_limiter.algorithms
 Four classic rate limiting algorithms, implemented from scratch with
 only the standard library. Each class exposes a single method:
 
-    allow(key: str) -> bool
+    allow(key: str) -> bool 
 
 `key` is whatever you want to limit on (IP address, user id, API key...).
-Each algorithm keeps its own per-key state in memory (a dict), which is
+Each algorithm keeps its own per-key state in memory (a dict), which is 
 fine for a single-process demo. For production/multi-process use, swap
-the in-memory dict for Redis (see README for notes on that).
-
-Algorithms included:
-1. FixedWindowLimiter      - simplest, but bursts at window edges
-2. SlidingWindowLogLimiter - exact, but O(n) memory per key
+the in-memory dict for Redis (see README for notes on that). 
+ 
+Algorithms included: 
+1. FixedWindowLimiter      - simplest, but bursts at window edges  
+2. SlidingWindowLogLimiter - exact, but O(n) memory per key 
 3. SlidingWindowCounterLimiter - approximate, O(1) memory, smooths edges
 4. TokenBucketLimiter      - allows bursts up to bucket size, smooth refill
 """
